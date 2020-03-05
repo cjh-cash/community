@@ -58,8 +58,7 @@ public class GithubProvider {
          *      .build();
          */
         Request request = new Request.Builder()
-                .url("https://api.github.com/user")
-                .header("Authorization","token "+accessToken)
+                .url("https://api.github.com/user?access_token=" + accessToken)
                 .build();
         try{
             Response response = client.newCall(request).execute();
