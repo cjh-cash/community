@@ -9,18 +9,18 @@ package com.cjh.community.model;
  * @Date: 2020/3/4 15:32
  */
 public class User {
-    private Integer id;
+    private Long id;
     private String name;
     private String accountId;
     private String token;
     private Long gmtCreate;
     private Long gmtModified;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
